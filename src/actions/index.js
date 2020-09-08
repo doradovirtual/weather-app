@@ -39,16 +39,14 @@ export const setWeather = payload =>{
     return dispatch => {
         payload.forEach( city => {
             dispatch(getWeatherCity(city));
+
             const api_weather = `${url_weather}?q=${city}&appid=${api_key}`;
-            console.log("llegue aqui");
             fetch(api_weather).then(data =>{
                 return data.json();
             }).then(weather_data => {
-                debugger;
                 console.log(weather_data)
-                const clima = transformWeather(weather_data);
-                
-               // dispatch(setWeatherCity({city, weather}));
+                const weather = transformWeather(weather_data);
+                dispatch(setWeatherCity({city, weather}));
             });
                
         });

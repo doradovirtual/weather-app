@@ -11,6 +11,7 @@ class LocationListContainer extends Component {
 
     componentDidMount() {
         this.props.setWeather(this.props.cities);
+        
     }
     
 
