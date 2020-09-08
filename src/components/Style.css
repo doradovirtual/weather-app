@@ -22,6 +22,7 @@
     padding-top: 0.5em;
     background: black;
     padding-bottom: 0.5em;
+    margin: auto;
 }
 
 .ForcastItemCont{
@@ -33,4 +34,10 @@
     padding-top: 2em;
     box-align: center;
 
+}
+
+h3 {
+    padding-top: calc(100% / 4);
+    text-align: center;
+    background: none;
 }

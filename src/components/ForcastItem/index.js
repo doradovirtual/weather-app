@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import WeatherData from './../WeatherLocation/WeatherData'
 
 
-const data = {
+/*const data = {
     temperature:10,
     humidity:10,
     weatherstate: 'normal',
     wind:'normal'
 
-}
+}*/
 
 
 const ForecastItem = ({ weekDay, hour, data }) =>(

@@ -3,10 +3,10 @@ import WeatherExtraInfo from './WeatherExtraInfo';
 import WeatherTemperature from './WeatherTemperature';
 import PropTypes from 'prop-types';
 import './styles.css';
-import{
+/*import{
     SUN, 
 } from './../../../constants/weathers';
-
+*/
 
 const WeatherData = ({ data: { temperature, weatherState, humidity, wind} }) => (
         <div className="weatherDataCont" >

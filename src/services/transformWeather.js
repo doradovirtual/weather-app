@@ -35,7 +35,7 @@ const getWeatherState = weather => {
 };
 
 
-const transformWeather = WeatherData => {
+const transformWeather = (WeatherData) => {
     const {humidity, temp} = WeatherData.main;
     const {speed} = WeatherData.wind;
     const weatherState = getWeatherState(WeatherData.weather[0]);

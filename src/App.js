@@ -36,10 +36,10 @@ class App extends Component {
           </AppBar>
         </Row>
         <Row  className="GridCont" >
-          <Col ls={12} xs={12} md={6} >
+          <Col ls={6} xs={12} md={6} >
              <LocationListContainer cities = {cities} > </LocationListContainer>
           </Col>
-          <Col ls={12} xs={12} md={6}>
+          <Col ls={6} xs={12} md={6}>
             <Paper>
             <div className="details">
                   <ForecastExtendedContainer/> 

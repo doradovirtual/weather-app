@@ -5,10 +5,10 @@ import { SET_CITY } from "../actions";
  * generar una nueva copia a partir de la accion que genera cambio en e
  * el estado.
  */
-export const city = (state, action) =>{
+export const city = (state = {}, action) =>{
     switch(action.type){
         case SET_CITY:
-            return{...state, city: action.value}
+            return action.payload;
         default:
             return state;
     }
